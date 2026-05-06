@@ -1,0 +1,385 @@
+  <!DOCTYPE html>
+
+  <html lang="id"><head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Undangan Pelepasan &amp; Gebyar Kreativitas - RA Nurul Auladi</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts for Serif/Script Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Great+Vibes&amp;family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandGreen: '#e3f3d3',
+              brandDarkGreen: '#5d7627',
+              brandBrown: '#4a3728',
+              brandAccent: '#f59e0b',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              script: ['"Great Vibes"', 'cursive'],
+              sans: ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <style data-purpose="custom-layout">
+
+  body {
+      background-color: #f3f4f1; /* Fallback color */
+      color: #333;
+      scroll-behavior: smooth;
+      margin: 0;
+      
+  }
+
+  #opening {
+      background-image: url("img/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      width: 100%;
+  }
+
+  /* Section Galeri sampai Catatan */
+  .bg-section-bawah {
+      background-image: url('img/cover.jpg'); /* Jika ingin background yang sama */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Membuat efek parallax agar tidak terasa 'putus' */
+      min-height: 100vh
+  }
+
+  /* Pembungkus Konten agar tetap rapi di tengah tapi background tetap full */
+  .content-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+  }
+
+  /* Responsivitas untuk Mobile */
+  @media (max-width: 640px) {
+      .bg-section-bawah {
+          background-attachment: scroll; /* Mobile lebih stabil dengan scroll biasa */
+      }
+  }
+
+  /* Animasi Flip & Utility lainnya tetap sama */
+  .flip-card { width: 60px; height: 45px; perspective: 1000px; }
+  .flip-inner { position: relative; width: 100%; height: 100%; }
+  .flip-digit { 
+      position: absolute; width: 100%; height: 100%; 
+      background: white; border-radius: 10px; 
+      display: flex; flex-direction: column; justify-content: center; align-items: center; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+  }
+  .flip-digit .number { font-size: 20px; font-weight: bold; line-height: 1; }
+  .flip-digit .label-inside { font-size: 9px; margin-top: 2px; opacity: 0.8; }
+  .flip-animate { animation: flipDown 0.6s ease; }
+  @keyframes flipDown { 0% { transform: rotateX(0deg); } 100% { transform: rotateX(-180deg); } }
+  .btn-primary {
+      background-color: #5d7627;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
+  }
+
+  #playBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    border-radius: 9999px;
+    border: none;
+    background: #4a3728;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#playBtn:hover {
+    background: #5d7627;
+}
+
+      </style>
+  </head>
+  <body class="font-sans">
+  <audio id="bgMusic" loop autoplay preload="auto" playsinline>
+  <source src="img/lindunghutan.mp3" type="audio/mpeg">
+</audio>
+  <!-- BEGIN: HeroSection -->
+  <section class="relative min-h-screen flex flex-col items-center justify-start pt-12 text-center px-6" id="opening">
+  <div class="content-wrapper"><!-- Header Logos -->
+  <div class="flex justify-center gap-4 mb-8" data-purpose="header-logos">
+  <img alt="Source for styles" class="hidden" src="https://lh3.googleusercontent.com/aida/ADBb0ujXRSb9URgWopg9ylUHBsnZ-aDdBTzZGqVZut_JJHVOlt4M2ZqKYq6s54_rxJvS5ckB1OjzH8N-_veIboVexxONjCv0AbrRi7JI1ECsNxh3lTZDGs9LzaedbW4SAsf-2af0oG4grvKJkzR9SFbcSgei4IgNTwTrif2WIylgbCtMDLJOiBZ-vRpLFZtHSnadhjZN9QKW7oKLY28HJiPPsSGOzucfmrRpUzCdtMO-_pxtlVwMph8aYgPQbTN9qEHqC679kV3MrqPpOA"/> <!-- Reference -->
+  <div class="flex items-center space-x-2">
+  <!-- Logos are extracted visually from the combined header area -->
+  <img alt="Logo Kemenag" class="w-16 h-16 rounded-full border border-gray-200 bg-white p-1" src="img/kemenag.png"/>
+  <img alt="Logo Yayasan" class="w-16 h-16 rounded-full border border-gray-200 bg-white p-1" src="img/sadar.png"/>
+  <img alt="Logo LPNA" class="w-16 h-16 rounded-full border border-gray-200 bg-white p-1" src="img/nurulauladi.png">
+  </div>
+  </div>
+  <div  class="mt-0">
+  <h2 class="font-serif text-2xl sm:text-3xl md:text-5xl leading-tight text-brandBrown tracking-widest uppercase mb-0 leading-none">UNDANGAN</h2>
+  <h1 class="font-serif text-2xl sm:text-3xl md:text-5xl leading-tight text-brandBrown tracking-widest down mb-0 font-light mb-0">PELEPASAN &amp; GEBYAR KREATIVITAS</h1>
+  <h2 class="text-brandAccent font-bold text-sm tracking-wide uppercase mb-0 leading-tight">"LITTLE EXPLORERS READY TO ADVENTURE TO THE NEXT LEVEL"</h2>
+  <div class="text-brandBrown font-serif text-lg mb-4 leading-snug -mt-1">
+  <p>RA Nurul Auladi</p>
+  <p>Yayasan Masjid Sadar</p>
+  </div>
+  <div class="mt-16 flex flex-col items-center gap-2">
+    <p class="font-serif italic text-sm text-brandBrown">
+      Kepada Yth Bapak/Ibu
+    </p>
+  </div>
+  <a class="btn-primary uppercase tracking-widest text-sm" href="#event-details">BUKA UNDANGAN</a>
+  <div id="flip-countdown" class="flex justify-center gap-2 mt-[110px]"></div>
+  </div>
+  <button onclick="togglePlay()" id="playBtn">▶️ Putar</button>
+  <!-- The background image provided (IMAGE_2) contains the characters at bottom. 
+          We use the image as background for the whole div to maintain fidelity. -->
+  </section>
+  <!-- END: HeroSection -->
+  <!-- BEGIN: GallerySection -->
+  <section class="relative py-16 px-8 bg-section-bawah min-h-screen" id="gallery">
+  <div class="content-wrapper">
+  <div class="text-center mb-10">
+  <h2 class="font-script text-6xl text-brandDarkGreen">Galeri</h2>
+  </div>
+  <div class="grid grid-cols-2 gap-4 mb-2">
+  <img alt="Galeri 1" class="w-full rounded shadow-sm" src="img/foto3.JPG"/>
+  <img alt="Galeri 2" class="w-full rounded shadow-sm" src="img/foto2.JPG"/>
+  </div>
+  <div class="grid grid-cols-2 gap-4 mb-2">
+  <img alt="Galeri 3" class="w-full rounded shadow-sm" src="img/foto5.JPG"/>
+  <img alt="Galeri 4" class="w-full rounded shadow-sm" src="img/foto4.JPG"/>
+  </div>
+  <div class="w-full mb-16">
+  <img alt="Galeri 5" class="w-full rounded shadow-sm" src="img/foto1.JPG"/>
+  </div>
+  <!-- Decorative Bottom Elements like IMAGE_3 -->
+  <div class="absolute bottom-0 left-0 right-0 h-32 pointer-events-none overflow-hidden flex items-end">
+  </div>
+  </section>
+  <!-- END: GallerySection -->
+  <!-- BEGIN: EventDetailsSection -->
+  <section class="relative py-16 px-8 bg-section-bawah" id="event-details">
+  <div class="content-wrapper">
+  <!-- Header from IMAGE_4 -->
+  <div class="mb-12">
+  <p class="text-brandBrown font-serif text-lg leading-relaxed max-w-xs mx-auto text-center">
+          Dengan ini kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Pelepasan &amp; Gebyar Kreativitas Tahun Ajaran 2025/2026
+        </p>
+  <h2 class="font-script text-3xl text-brandDarkGreen mt-6 text-center">Yang Diselenggarakan Pada</h2>
+  </div>
+  <!-- Date Card -->
+  <div class="flex items-center justify-center gap-8 mb-10">
+  <div class="text-brandDarkGreen">
+  <svg class="w-20 h-20" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"></path>
+  </svg>
+  </div>
+  <div class="text-left">
+  <p class="font-serif text-xl text-brandBrown">Minggu</p>
+  <div class="flex items-start gap-2">
+  <span class="font-serif text-6xl font-bold text-brandBrown">24</span>
+  <div class="flex flex-col mt-4">
+  <span class="font-serif text-xl text-brandBrown leading-tight">Mei</span>
+  <span class="font-serif text-xl text-brandBrown leading-tight">2026</span>
+  </div>
+  </div>
+  <p class="font-serif text-lg text-brandBrown mt-2">Pukul 07.00 - 13.00 WITA</p>
+  </div>
+  </div>
+  <hr class="border-brandDarkGreen border-t opacity-30 mb-10 mx-auto w-4/5"/>
+  <!-- Location from IMAGE_4 -->
+  <div class="flex items-start justify-center gap-6 mb-12">
+  <div class="text-brandDarkGreen shrink-0 mt-1">
+  <svg class="w-12 h-12" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+  </svg>
+  </div>
+  <div class="text-left">
+  <h3 class="font-serif text-2xl font-bold text-brandBrown mb-2">Hotel Grand Santhi</h3>
+  <p class="text-brandBrown font-serif leading-snug">
+            Jl. Patih Jelantik No.1, Dauh Puri Klod,<br/>
+            Kec. Denpasar Bar., Kota Denpasar,<br/>
+            Bali 80113
+          </p>
+  </div>
+  </div>
+  <!-- Signature -->
+  <div class="mt-5">
+  <p class="font-serif text-lg text-brandBrown mb-2 text-center">Kepala RA Nurul Auladi</p>
+  <div class="h-24 flex items-center justify-center mb-2">
+  <!-- SVG Placeholder for the signature -->
+  <div class="flex justify-center my-4">
+    <img src="img/ttd.png" alt="Tanda Tangan"
+        class="w-48 md:w-64 object-contain">
+  </div>
+  </div>
+  <p class="font-serif text-xl font-bold text-brandBrown underline text-center">Siti Qomariyah, S.Pd</p>
+  </div>
+  </section>
+  <!-- END: EventDetailsSection -->
+  <!-- BEGIN: LocationSection -->
+  <section class="relative py-16 px-8 bg-section-bawah text-center min-h-screen" id="location">
+  <h2 class="font-script text-5xl text-brandDarkGreen mb-7 text-center">Lokasi Acara</h2>
+  <!-- Map Container -->
+  <div class="w-full rounded-xl overflow-hidden shadow-lg mb-2 border-2 border-white">
+  <!-- Using placeholder as instruction for static map view like IMAGE_5 -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4509.172129041258!2d115.21363697501457!3d-8.6685510913791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24094ea62bf41%3A0xcdde62985b9e300e!2sHotel%20Grand%20Santhi!5e1!3m2!1sen!2sid!4v1777973733827!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <p class="text-brandBrown font-serif mb-4 px-2 text-center">
+        Jl. Patih Jelantik No.1, Dauh Puri Klod,<br/>
+        Kec. Denpasar Bar., Kota Denpasar, Bali 80113
+      </p>
+  <div class="mt-0 flex flex-col items-center">
+    <a class="btn-primary uppercase tracking-widest text-sm"  href="https://maps.app.goo.gl/2E4eekgciQ5e97AG7" target="_blank" >
+        Petunjuk ke Lokasi
+      </a>
+  </div>
+  </section>
+  <!-- END: LocationSection -->
+  <!-- BEGIN: NotesSection -->
+  <section class="relative py-16 px-8 bg-section-bawah text-center min-h-screen" id="notes">
+  <div class="content-wrapper">
+  <h2 class="font-script text-5xl text-brandDarkGreen mb-7 text-center">Catatan</h2>
+  <div class="mb-12">
+  <h3 class="font-serif text-2xl font-bold text-brandDarkGreen mb-3">Kehadiran</h3>
+  <p class="text-brandBrown font-serif text-lg">Mohon hadir 30 menit sebelum acara dimulai</p>
+  </div>
+  <div class="mb-20">
+  <h3 class="font-serif text-2xl font-bold text-brandDarkGreen mb-3">Dresscode</h3>
+  <p class="text-brandBrown font-serif text-lg leading-relaxed">
+          Nuansa Hijau daun, hijau lumut, Cokelat tanah,<br/>
+          Beige atau krem, Hitam.
+        </p>
+  </div>
+  <!-- Illustration Footer - Based on IMAGE_6 -->
+  <div class="absolute bottom-0 left-0 right-0 w-full" data-purpose="footer-illustration">
+  </div>
+  </section>
+  <!-- END: NotesSection -->
+  <script data-purpose="navigation-logic">
+      // Basic interaction for 'Buka Undangan'
+      document.querySelector('a[href="#event-details"]').addEventListener('click', function(e) {
+        // Logic for smooth scroll is already handled by CSS but can add custom behavior here
+      });
+    </script>
+  <script>
+  const targetDate = new Date("2026-05-24T07:00:00").getTime();
+  function createBox(value, label) {
+    return `
+      <div class="flip-card">
+        <div class="flip-inner" id="${label}">
+          <div class="flip-digit">
+            <span class="number">${value}</span>
+            <span class="label-inside">${label}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function updateFlip(id, newValue) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+  const number = el.querySelector(".number");
+
+  if (number.innerText != newValue) {
+    number.parentElement.classList.add("flip-animate");
+
+    setTimeout(() => {
+      number.innerText = newValue;
+      number.parentElement.classList.remove("flip-animate");
+    }, 300);
+  }
+  }
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) return;
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    updateFlip("Hari", d);
+    updateFlip("Jam", h);
+    updateFlip("Menit", m);
+    updateFlip("Detik", s);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("flip-countdown");
+
+    container.innerHTML =
+      createBox("0", "Hari") +
+      createBox("0", "Jam") +
+      createBox("0", "Menit") +
+      createBox("0", "Detik");
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  });
+  
+const music = document.getElementById("bgMusic");
+const playBtn = document.getElementById("playBtn");
+const openBtn = document.querySelector('a[href="#event-details"]');
+
+function updatePlayButton() {
+    playBtn.innerText = music.paused ? "▶️ Putar" : "⏸️ Jeda";
+}
+
+openBtn.addEventListener('click', function() {
+    if (music.paused) {
+        music.play().catch(error => console.log("Playback failed:", error));
+    }
+});
+
+function togglePlay() {
+    if (music.paused) {
+        music.play().then(() => {
+            updatePlayButton();
+        }).catch(error => console.log("Playback failed:", error));
+    } else {
+        music.pause();
+        updatePlayButton();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updatePlayButton();
+});
+
+window.addEventListener("load", () => {
+    music.play().then(() => {
+        updatePlayButton();
+    }).catch(error => console.log("Autoplay blocked:", error));
+});
+
+document.addEventListener("click", function firstUserGesture() {
+    if (music.paused) {
+        music.play().catch(error => console.log("Playback failed:", error));
+    }
+    updatePlayButton();
+}, { once: true });
+
+  </script>
+  </body></html>
